@@ -1,0 +1,148 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px; 
+}
+.box-shadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.menu > ul li{
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.menu > ul li::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  transition: width .32s;
+}
+.menu > ul li:hover::after{
+  width: 100%;
+}
+.menu > ul li > a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
+.menu > ul li > a:hover{
+  color: #000;
+}
+.logo{
+  cursor: pointer;
+}
+.logo > img{
+  width: 60px;
+  height: 60px;
+  user-select: none;
+}
+
+.open-menu,
+.close-menu{
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+.sub-menu,
+.icon-menu{
+  display: none;
+}
+
+@media screen and (min-width: 365px) and (max-width: 767px) {
+  .menu{
+    display: none;
+  }
+  .icon-menu{
+    display: block;
+  }
+  .open-menu,
+  .close-menu{
+    display: block;
+    transition: transform .32s;
+  }
+  .open-menu:hover,
+  .close-menu:hover{
+    transform: scale(1.08);
+    color: #000;
+  }
+  .sub-menu{
+    display: block;
+  }
+  .sub-menu > ul{
+    list-style: none;
+  }
+  .sub-menu > ul li{
+    text-align: center;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  .sub-menu > ul li:nth-child(6){
+    padding-bottom: 10px;
+  }
+  .sub-menu > ul li > a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .sub-menu > ul li:hover{
+    background-color: white;
+  }
+  .sub-menu > ul li > a:hover{
+    color: #000;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .menu{
+    display: none;
+  }
+  .icon-menu{
+    display: block;
+  }
+  .open-menu,
+  .close-menu{
+    display: block;
+    transition: transform .32s;
+  }
+  .open-menu:hover,
+  .close-menu:hover{
+    transform: scale(1.08);
+    color: #000;
+  }
+  .sub-menu{
+    display: block;
+  }
+  .sub-menu > ul{
+    list-style: none;
+  }
+  .sub-menu > ul li{
+    text-align: center;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  .sub-menu > ul li:nth-child(6){
+    padding-bottom: 10px;
+  }
+  .sub-menu > ul li > a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .sub-menu > ul li:hover{
+    background-color: white;
+  }
+  .sub-menu > ul li > a:hover{
+    color: #000;
+  }
+}
